@@ -1,8 +1,6 @@
 #### What does this PR do?
 Notifications give users to opportunity to know what they may have missed which may be important to them.
 #### Description of task to e completed
-- [ ] Bug Fix (a non-breaking change which fixes an issue)
-- [x] New Feature (a non-breaking change that adds functionality)
 - [ ] New Chore (a non-breaking change that adds functionality)
 - [ ] Breaking Change (a fix or feature which would cause existing functionality not to work as expected)
 - [ ] This change requires a documentation update
@@ -10,4 +8,4 @@ Notifications give users to opportunity to know what they may have missed which 
 #### Any background context you want to provide
 #### What are the relevant pivotal stories
 #### Screenshots (if appropriate)
-#### Questions
+#### Question
