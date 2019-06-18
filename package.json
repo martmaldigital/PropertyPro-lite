@@ -1,0 +1,31 @@
+{
+  "name": "propertypro-lite",
+  "version": "1.0.0",
+  "description": "Property Pro Lite is a platform where people can create and/or search properties for sale or rent",
+  "main": "app.js",
+  "scripts": {
+    "deploy": "gh-pages -d UI",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martmaldigital/PropertyPro-lite.git"
+  },
+  "keywords": [
+    "Property",
+    "Land",
+    "Housing",
+    "Sale",
+    "Rent",
+    "Apartments"
+  ],
+  "author": "Matthew Aloba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martmaldigital/PropertyPro-lite/issues"
+  },
+  "homepage": "https://github.com/martmaldigital/PropertyPro-lite#readme",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
