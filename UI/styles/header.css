@@ -1,0 +1,148 @@
+.nav {
+    background-color: #f3f3f3;
+    color: green;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+  }
+  
+  .nav .nav-center .nav-header {
+    display: inline;
+  }
+  
+  .nav .nav-center .nav-header .nav-title {
+    display: inline-block;
+  }
+  
+  .nav-title img {
+    height: 35px;
+    margin: 0;
+    margin-top: 10px;
+  }
+  
+  .nav .nav-center .nav-btn {
+    display: none;
+  }
+  
+  .nav .nav-center .nav-links {
+    display: inline;
+    float: right;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  
+  .nav .nav-center .nav-links a {
+    display: inline-block;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: #333;
+  
+  }
+  
+  .nav .nav-center .nav-links a:hover {
+    color: green;
+    transition: 0.3s;
+  }
+  
+  
+  .nav-center {
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  #active {
+    color: #fff;
+    background-color: #34b3a0;
+  }
+  
+  .dropdown {
+      display: inline-block;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 10px;
+      max-width: 120px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+      z-index: 1;
+      
+  }
+  .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      }
+  
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  
+  .droparrow {
+      font-size: 13px;
+      
+  }
+  @media (max-width: 830px) {
+    .nav .nav-center .nav-links a {
+      display: inline-block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+  }
+  
+  
+  @media (max-width:670px) {
+    .nav .nav-center .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 10px;
+      top: 17px;
+    }
+    .nav .text .nav-btn label {
+      display: inline-block;
+      width: 50%;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav .nav-center .nav-btn label:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav .nav-center .nav-btn label span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #333  ;
+    }
+    .nav .nav-center .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #fff;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav .nav-center .nav-links a {
+      display: block;
+      width: 20%;
+    }
+    .nav .nav-center  #nav-check:not(:checked) + .nav-links {
+      height: 0px;
+    }
+    .nav .nav-center #nav-check:checked + .nav-links {
+      height: 200px;
+    }
+  }
+  footer{
+    padding:1px 0px;
+    margin-top:20px;
+    color:#ffffff;
+    background-color: seagreen;
+    text-align: center;
+  }
+  
