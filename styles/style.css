@@ -1,111 +1,132 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e9eaea;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #000000;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 120vh;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.user-header p {
+    margin-top: -20px;
+    color: #ccc;
+}
+.signin {
+  background: #fff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 36%;
+  padding: 20px;
+}
+.signin form {
+  width: 70%;
+  padding-bottom: 20px;
+}
+
+.signin label {
+  font-size: 16px;
+  line-height: 2;
+}
+span {
+    margin: 3px;
+}
+.ast {
+    color: red;
+}
+
+#error {
+    color: red ;
+    visibility: hidden;
+	position: -webkit-sticky;
+    position: sticky;
+    font-size: 14px;
+}
+
+#success {
+    color: green;
+    margin-bottom: 1em;
+}
+.signin .text-input {
+  margin-bottom: 10px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  line-height: 2;
+    outline: none;
+}
+.text-input:focus {
+    border: 1px dashed #34b3a0;
+}
+  .btn {
+     width: 100%;
+     border-radius: 0.3em;
+     background: #34b3a0;
+     height: 40px;
+     text-align: center;
+     line-height: 40px;
+     text-transform: uppercase;
+     color: #fff;
+     font-weight: 500;
+     letter-spacing: 1px;
+     margin-top: 10px;
+     margin-bottom: 15px;
+     border: none;
+     font-size: 14px;
   }
-  
-  
-  
-  body {
-    background-color: #e9eaea;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-    line-height: 1.5;
-    color: #000000;
+
+  .btn:hover {
+    background: rgb(34, 146, 120);
+    cursor: pointer;
   }
-  
+
+  .btn:active {
+      cursor: not-allowed;
+  }
+.reset {
+    text-decoration: none;
+    color: red;
+}
+.reset:hover {
+    color:#34b3a0; 
+}
+
+
+@media (min-width: 0px) and (max-width: 680px) {
   .container {
-    display: flex;
-    flex-direction: row;
-    height: 110vh;
-  }
-  
-  .box {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-  }
-  .user-header p {
-      margin-top: -20px;
-      color: #ccc;
-  }
-  
+  display: flex;
+  flex-direction: row;
+  height: 130vh;
+}
   .signin {
-    background: #fff;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 36%;
-    padding: 20px;
+    width: 90%;
+    margin: 5px;
   }
-  
   .signin form {
-    width: 70%;
-    padding-bottom: 20px;
-  }
-  
-  .signin label {
-    font-size: 16px;
-    line-height: 2;
-  }
-  span {
-      margin: 1px;
-  }
-  .error {
-      color: red;
-  }
-  .signin .text-input {
-    margin-bottom: 10px;
     width: 100%;
-    background: #fff;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    line-height: 2;
   }
-    .btn {
-       width: 100%;
-       border-radius: 0.3em;
-       background: #34b3a0;
-       height: 40px;
-       text-align: center;
-       line-height: 40px;
-       text-transform: uppercase;
-       color: #fff;
-       font-weight: 500;
-       letter-spacing: 1px;
-       margin-top: 10px;
-       margin-bottom: 20px;
-       border: none;
-       font-size: 14px;
+
+
+    footer {
+        display: none;
     }
   
-    .btn:hover {
-      background: rgb(34, 146, 120);
-      cursor: pointer;
-    }
-  
-    .btn:active {
-        cursor: not-allowed;
-    }
-  
-  @media (min-width: 0px) and (max-width: 680px) {
-    .signin {
-      width: 90%;
-      margin: 5px;
-    }
-    .signin form {
-      width: 100%;
-    }
-  
-    .signin .register-btn, .or, .links {
-      width: 100%;
-    }
-    .footer {
-      max-width: 100%;
-    }
-    
-  }
+}
