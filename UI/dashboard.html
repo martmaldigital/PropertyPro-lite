@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="PropertyPro-lite helps you find verifiable and affordable appartments for rent or for sale"
+    />
+    <meta
+      name="keywords"
+      content="Property,Land,Housing,Sale,
+      Rent, Apartments"
+    />
+    <meta name="author" content="Matthew Aloba" />
+    <title>dashboard | searching for a home made easy</title>
+    <link rel="stylesheet" href="styles/header.css" />
+      <link rel="stylesheet" href="styles/dashboard.css">
+      <link rel="stylesheet" href="styles/modal.css">
+  </head>
+  <body>
+      
+    <header>
+    <nav class="menu">
+   
+ <a href="#" class="logo"><img src="images/logo.png"></a>
+    <ul>
+        <li class="current"><a href="#">dashboard</a></li>
+        <li><a href="signin.html">logout</a></li>
+    </ul>
+    <button class="toggle">
+      <span></span>
+    </button>
+  </nav>
+        </header>    
+          <section id="main">
+      <div class="container">
+          <aside id="sidebar">
+          <div class="prop-right">
+              <div class="user-photo">
+              <img src="images/avater.png" alt="profile picture">
+                </div>
+              <div class="user_details">
+                  <p><span data-name="name" class="prop">Name : <em>Matthew Aloba</em></span><span data-name-value="name" class="value"></span></p>
+                  <p><span data-email="email" class="prop">Email : <em>digital@gmail.com</em></span><span data-email-value="email" class="value"></span></p>
+                  <p><span data-mobile="mobile" class="prop">Mobile No : <em>08039 665 7854</em></span><span data-mobile-value="mobile" class="value"></span></p>
+              </div>
+              <div class="user-action">
+                  <ul>
+                  <button id="post-property" onclick="document.getElementById('close-property').style.display='block'">Post Property</button>
+                      <li> <a href="userpost.html">View Postings</a></li>
+                  <button id="report-property" onclick="document.getElementById('rep-property').style.display='block'">Report fake ads</button>
+                      </ul>
+              </div>
+          </div>
+        <div class="prop-right">
+            <h3> Contact for your advert placement</h3>
+
+          </div>
+        </aside>
+          
+        <article id="main-col">
+            <div class="search-bar">
+              <input type="text" name="search" placeholder="Search... Enter location, apartment type etc..">
+        <button class="search-btn">Search</button>
+    </div>
+            <div class="prop_type">
+            <p>Type | <span><a href="#">2-bedroom |</a></span><span><a href="#"> 3-bedroom |</a></span><span><a href="#"> 4-bedroom |</a></span><span><a href="#"> duplex |</a></span><span><a href="#"> mini flat |</a></span><span><a href="#"> self contained</a></span></p>
+                </div>
+          <ul id="properties">
+              
+                    <!--post property modal form -->
+<div id="close-property" class="modal">
+  
+  <form class="modal-content animate" action="">
+      <h3 class="modal_header">post property</h3>
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('close-property').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="modal-container">
+      <label for="property_title"><b>Property Title</b></label>
+      <input type="text1" name="property_title" required>
+              <label for="agent_name"><b>Agent Name</b></label>
+      <input type="text1" name="agent_name" required>
+              <label for="property_type"><b>Property Type</b></label>
+        <select id="property-type" name="property-type">
+            <option value="2 bedroom">2 bedroom
+            </option>
+            <option value="2 bedroom">3 bedroom
+            </option>
+            <option value="2 bedroom">mini flat
+            </option>
+            <option value="2 bedroom">self contained
+            </option>
+        </select>
+           <label for="property_options"><b>Property Option</b></label>
+                <select id="property-option" name="property-option">
+            <option value="2 bedroom">for sale </option>
+            <option value="2 bedroom">for rent
+            </option>
+            </select>
+
+      <label for="property_location"><b>Property Location</b></label>
+      <input type="text1" name="property_location" required>
+        <label for="price"><b>Price (#)</b></label>
+      <input type="text1" placeholder="Enter price in Naira" name="price" required>
+        <label for="property_image"><b>Image upload</b></label>
+      <input type="file" name="poperty_image" accept="image/*"required>
+        
+      <label>
+        <input type="checkbox" name="confirm"> I have read the terms and conditions
+      </label>
+    </div>
+
+    <div class="modal-container">
+      <button type="button" class="postbtn">Post</button>
+
+    </div>
+  </form>
+</div>
+      <!-- post property modal form ends -->
+              
+              <!--report fake ads modal form -->
+              <div id="rep-property" class="modal">
+  
+  <form class="modal-content animate" action="">
+      <h3 class="modal_header">report fake ads</h3>
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('rep-property').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="modal-container">
+      <label for="property_title"><b>Agent Name</b></label>
+      <input type="text1" name="property_title" required>
+        <label for="agent_name"><b>Property Location</b></label>
+        <input type="text1" name="property_title" required>
+    
+      <label for="complaint"><b>Type complaint</b></label>
+      <textarea placeholder="file complaint"></textarea>
+    </div>
+
+    <div class="modal-container">
+      <button type="button" class="postbtn">Send</button>
+
+    </div>
+  </form>
+</div>
+              <!-- report property modal form ends -->
+            
+<div class="main">
+  <h1 class="dashboard_header">Featured Property Postings</h1>
+  <ul class="cards">
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="images/demo.JPG" alt="2 Bedroom Apartment with 3 toilets"></div>
+        <div class="card_content">
+          <h2 class="card_title">For Sale</h2>
+          <p class="card_text">2 Bedroom Apartment with 3 toilets</p>
+            <p class="card_price">#40,000,000</p>
+            <a href="details.html"
+               class="card_btn">View Property</a>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="images/landing.JPG" alt="2 Bedroom Apartment with 3 toilets"></div>
+        <div class="card_content">
+          <h2 class="card_title">For Rent</h2>
+          <p class="card_text">2 Bedroom Apartment with 3 toilets</p>
+            <p class="card_price">#2,000,000</p>
+            <a href="details.html" class="card_btn">View Property</a>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="images/demo.JPG" alt="2 Bedroom Apartment with 3 toilets"></div>
+        <div class="card_content">
+          <h2 class="card_title">For Sale</h2>
+          <p class="card_text">2 Bedroom Apartment with 3 toilets</p>
+            <p class="card_price">#40,000,000</p>
+            <a href="details.html" class="card_btn">View Property</a>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="images/landing.JPG" alt="2 Bedroom Apartment with 3 toilets"></div>
+        <div class="card_content">
+          <h2 class="card_title">For Sale</h2>
+          <p class="card_text">2 Bedroom Apartment with 3 toilets</p>
+            <p class="card_price">#40,000,000</p>
+            <a href="details.html" class="card_btn">View Property</a>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="images/landing1.jpg" alt="2 Bedroom Apartment with 3 toilets"></div>
+        <div class="card_content">
+          <h2 class="card_title">For Sale</h2>
+          <p class="card_text">2 Bedroom Apartment with 3 toilets</p>
+            <p class="card_price">#40,000,000</p>
+            <a href="details.html" class="card_btn">View Property</a>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="images/demo.JPG" alt="2 Bedroom Apartment with 3 toilets"></div>
+        <div class="card_content">
+          <h2 class="card_title">For Sale</h2>
+          <p class="card_text">2 Bedroom Apartment with 3 toilets</p>
+            <p class="card_price">#40,000,000</p>
+            <a href="details.html" class="card_btn">View Property</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>        
+    </ul>
+    </article>
+
+        
+      </div>
+    </section>
+
+      
+      <footer>
+      <p>PropertyPro-lite Inc., Copyright &copy; 2019.</p>
+    </footer>
+      <script src="script/main.js"></script>
+    </body>
+</html>
