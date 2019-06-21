@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="PropertyPro-lite helps you find verifiable and affordable appartments for rent or for sale"
+    />
+    <meta
+      name="keywords"
+      content="Property,Land,Housing,Sale,
+      Rent, Apartments"
+    />
+    <meta name="author" content="Matthew Aloba" />
+    <title>property full details | searching for a home made easy</title>
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/property.css"/>
+      <link rel="stylesheet" href="styles/modal.css">
+  </head>
+  <body>
+      
+<header>
+    <nav class="menu">
+   
+        <a href="#" class="logo"><img src="images/logo.png"></a>
+        <ul>
+        <li><a href="dashboard.html">dashboard</a></li>
+        <li class="current"><a href="#">my property</a></li>
+        <li><a href="signin.html">logout</a></li>
+        </ul>
+        <button class="toggle">
+        <span></span>
+        </button>
+    </nav>
+</header>      
+
+    <section id="main">
+      <div class="container">
+          <aside id="sidebar">
+          <div class="prop-right">
+              <div class="user-photo">
+              <img src="images/avater.png" alt="profile picture">
+                </div>
+              <div class="user_details">
+                  <p><span data-name="name" class="prop">Name : <em>Matthew Aloba</em></span><span data-name-value="name" class="value"></span></p>
+                  <p><span data-email="email" class="prop">Email : <em>digital@gmail.com</em></span><span data-email-value="email" class="value"></span></p>
+                  <p><span data-mobile="mobile" class="prop">Mobile No : <em>08039 665 7854</em></span><span data-mobile-value="mobile" class="value"></span></p>
+              </div>
+              <div class="user-action">
+                  <button id="post-property" onclick="document.getElementById('close-property').style.display='block'">Post Property</button>
+                  <button id="report-property" onclick="document.getElementById('rep-property').style.display='block'">Report fake ads</button>
+              </div>
+          </div>
+        <div class="prop-right">
+            <h3> Contact for your advert placement</h3>
+        </div>
+        </aside>
+        <article id="main-col">
+            <div class="search-bar">
+            <input type="text" name="search" placeholder="Search... Enter location, apartment type etc..">
+            <button class="search-btn">Search</button>
+    </div>
+          <h1 class="page-title">Property / Full details</h1>
+          <ul id="properties_show">
+              <!--post property modal form -->
+<div id="close-property" class="modal">
+    <form class="modal-content animate" action="">
+      <h3 class="modal_header">post property</h3>
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('close-property').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="modal-container">
+      <label for="property_title"><b>Property Title</b></label>
+      <input type="text1" name="property_title" required>
+              <label for="agent_name"><b>Agent Name</b></label>
+      <input type="text1" name="agent_name" required>
+              <label for="property_type"><b>Property Type</b></label>
+        <select id="property-type" name="property-type">
+            <option value="2 bedroom">2 bedroom
+            </option>
+            <option value="2 bedroom">3 bedroom
+            </option>
+            <option value="2 bedroom">mini flat
+            </option>
+            <option value="2 bedroom">self contained
+            </option>
+        </select>
+           <label for="property_options"><b>Property Option</b></label>
+                <select id="property-option" name="property-option">
+            <option value="2 bedroom">for sale </option>
+            <option value="2 bedroom">for rent
+            </option>
+            </select>
+
+      <label for="property_location"><b>Property Location</b></label>
+      <input type="text1" name="property_location" required>
+        <label for="price"><b>Price (#)</b></label>
+      <input type="text1" placeholder="Enter price in Naira" name="price" required>
+        <label for="property_image"><b>Image upload</b></label>
+      <input type="file" name="poperty_image" accept="image/*"required>
+        
+      <label>
+        <input type="checkbox" name="confirm"> I have read the terms and conditions
+      </label>
+    </div>
+
+    <div class="modal-container">
+      <button type="button" class="postbtn">Post</button>
+
+    </div>
+  </form>
+</div>
+      <!-- post property modal form ends -->
+              
+              <!--report fake ads modal form -->
+    <div id="rep-property" class="modal">
+  
+  <form class="modal-content animate" action="">
+      <h3 class="modal_header">report fake ads</h3>
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('rep-property').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="modal-container">
+        <label for="property_title"><b>Agent Name</b></label>
+        <input type="text1" name="property_title" required>
+        <label for="agent_name"><b>Property Location</b></label>
+        <input type="text1" name="property_title" required>
+    
+      <label for="complaint"><b>Type complaint</b></label>
+      <textarea placeholder="file complaint"></textarea>
+    </div>
+
+    <div class="modal-container">
+      <button type="button" class="postbtn">Send</button>
+
+    </div>
+  </form>
+</div>
+              <!-- post property modal form ends -->
+              <!-- edit property modal form -->
+              <div id="edit-property" class="modal">
+  
+    <form class="modal-content animate" action="">
+        <h3 class="modal_header">Update post</h3>
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('edit-property').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="modal-container">
+        <label for="property_title"><b>Property Title</b></label>
+      <input type="text1" name="property_title" required>
+              <label for="agent_name"><b>Agent Name</b></label>
+      <input type="text1" name="agent_name" required>
+              <label for="property_type"><b>Property Type</b></label>
+        <select id="property-type" name="property-type">
+            <option selected disabled>Property Type</option>
+            <option value="2 bedroom">2 bedroom
+            </option>
+            <option value="2 bedroom">3 bedroom
+            </option>
+            <option value="2 bedroom">mini flat
+            </option>
+            <option value="2 bedroom">self contained
+            </option>
+        </select>
+           <label for="property_options"><b>Property Option</b></label>
+                <select id="property-option" name="property-option">
+            <option selected disabled>Property Option</option>
+            <option value="2 bedroom">for sale </option>
+            <option value="2 bedroom">for rent
+            </option>
+            </select>
+            <label for="property_options"><b>Property Status</b></label>
+                <select id="property-option" name="property-option">
+                    <option selected disabled>Property Status</option>
+            <option value="available">Available </option>
+            <option value="sold">Sold
+            </option>
+            <option value="rented">Rented
+            </option>
+            </select>
+
+      <label for="property_location"><b>Property Location</b></label>
+      <input type="text1" name="property_location" required>
+        <label for="price"><b>Price (#)</b></label>
+      <input type="text1" placeholder="Enter price in Naira" name="price" required>
+        <label for="property_image"><b>Image upload</b></label>
+      <input type="file" name="poperty_image" accept="image/*"required>
+        
+      <label>
+        <input type="checkbox" name="confirm"> Confirm the page update!
+      </label>
+    </div>
+
+    <div class="modal-container">
+      <button type="button" class="postbtn">Update</button>
+
+    </div>
+  </form>
+</div>
+      <!-- edit property modal ends -->
+              <li>
+              <h4 class="prop_title">2 BEDROOM DETACHED DUPLEX HOUSE FOR RENT CLOSE TO SHOPRITE LEKKI PHASE 2 LEKKI LAGOS </h4>
+                 <h4>Agent: Martmal Homes | mobile: 0803-XXX-XXXX</h4>
+                <div class="img-properties">
+                <img class="img-prop"  src="images/form.JPG">
+                    </div>
+               
+              <p>Location: Close To Shoprite Lekki Phase 2 Lekki Lagos
+                <p>Apartment Type: 5 bed 5 bath 6 toilet </p>
+                <p>It's a brand new house with all modern infrastructure as plausible. </p>
+                <p>Pricing: ₦ 2,000,000 / annum</p>
+                <h3>Apartment Details</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.</p>
+                <button id="edit-property" onclick="document.getElementById('edit-property').style.display='block'">Update Property</button>
+                <button id="delete" class="delete_property">Delete Property</button>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+      <footer>
+      <p>PropertyPro-lite Inc., Copyright &copy; 2019.</p>
+    </footer>
+      <script src="script/main.js"></script>
+    </body>
+</html>
