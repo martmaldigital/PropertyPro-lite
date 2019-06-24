@@ -26,9 +26,11 @@
   },
   "homepage": "https://github.com/martmaldigital/PropertyPro-lite#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "eslint": "^6.0.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.3",
+    "express": "^4.17.1",
     "gh-pages": "^2.0.1"
   },
   "devDependencies": {
