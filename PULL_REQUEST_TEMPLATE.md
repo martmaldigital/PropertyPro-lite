@@ -1,6 +1,6 @@
 #### What does this PR do?
 Notifications give users to opportunity to know what they may have missed which may be important to them.
-#### Description of task to e completed
+#### Description of task to be completed
 - [ ] New Chore (a non-breaking change that adds functionality)
 - [ ] Breaking Change (a fix or feature which would cause existing functionality not to work as expected)
 - [ ] This change requires a documentation update
