@@ -1,4 +1,4 @@
-const data = [
+const properties = [
   {
     id: 1,
     status: 'Available',
@@ -53,4 +53,4 @@ const data = [
   },
 ];
 
-export default data;
+export default properties;
